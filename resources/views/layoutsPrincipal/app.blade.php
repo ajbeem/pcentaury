@@ -40,12 +40,14 @@ Smartphone Compatible web template, webdesigns for Nokia, Samsung, LG, SonyErics
    
     <!--Footer-->
     @include('layoutsPrincipal.footer')
-    <!--Dev Vue Mode-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.2.0/vue.js"></script>
+    <!--Dev Vue Mode>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.2.0/vue.js"></script-->
+    <script src="js/VUE/vue.dev.js"></script>
     <!--Prod Vue Mode>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.2.0/vue.min.js"></script-->
-    <!--Dev Mode-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
+    <!--Dev Mode>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script-->
+    <script src="js/VUE/axios.dev.js"></script>
     <!--Prod Mode>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script-->
 </body>

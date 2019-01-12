@@ -10,10 +10,9 @@ Smartphone Compatible web template, webdesigns for Nokia, Samsung, LG, SonyErics
 
     <title>Pr&oacute;xima Centaury</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
-<!-- font-awesome-icons -->
+    <!-- font-awesome-icons -->
 <link rel="stylesheet" href="css/icons.css" type="text/css" media="all"/>
 <link href="css/style-index.css" rel="stylesheet"> 
     <script src="js/JQUERY/jquery-dev-3.1.1.js"></script>

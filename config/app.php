@@ -169,11 +169,11 @@ return [
         /*
          * Application Service Providers...
          */
-        App\Providers\AppServiceProvider::class,
-        App\Providers\AuthServiceProvider::class,
-        // App\Providers\BroadcastServiceProvider::class,
-        App\Providers\EventServiceProvider::class,
-        App\Providers\RouteServiceProvider::class,
+        ProximaCentaury\Providers\AppServiceProvider::class,
+        ProximaCentaury\Providers\AuthServiceProvider::class,
+        // ProximaCentaury\Providers\BroadcastServiceProvider::class,
+        ProximaCentaury\Providers\EventServiceProvider::class,
+        ProximaCentaury\Providers\RouteServiceProvider::class,
 
     ],
 

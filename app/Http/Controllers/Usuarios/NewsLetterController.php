@@ -14,6 +14,7 @@ class NewsLetterController extends Controller
     public function index()
     {
         //
+        return "Hola desde NewsLetterController";
     }
 
     /**

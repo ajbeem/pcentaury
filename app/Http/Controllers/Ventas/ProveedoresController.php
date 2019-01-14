@@ -14,6 +14,7 @@ class ProveedoresController extends Controller
     public function index()
     {
         //
+        return "Hola desde ProveedoresController";
     }
 
     /**

@@ -14,6 +14,7 @@ class ArticulosPedidosController extends Controller
     public function index()
     {
         //
+        return "Hola desde ArticulosPedidosController";
     }
 
     /**

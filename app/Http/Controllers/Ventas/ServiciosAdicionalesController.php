@@ -14,6 +14,7 @@ class ServiciosAdicionalesController extends Controller
     public function index()
     {
         //
+        return "Hola desde ServiciosAdicionalesController";
     }
 
     /**

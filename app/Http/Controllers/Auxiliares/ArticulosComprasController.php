@@ -14,6 +14,7 @@ class ArticulosComprasController extends Controller
     public function index()
     {
         //
+        return "Hola desde ArticulosComprasController";
     }
 
     /**

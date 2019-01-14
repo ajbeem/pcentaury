@@ -14,6 +14,7 @@ class PromocionesPedidosController extends Controller
     public function index()
     {
         //
+        return "Hola desde PromocionesPedidosController";
     }
 
     /**

@@ -14,6 +14,7 @@ class ServiciosPedidosController extends Controller
     public function index()
     {
         //
+        return "Hola desde ServiciosPedidosController";
     }
 
     /**

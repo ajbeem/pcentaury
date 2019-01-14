@@ -28,31 +28,32 @@ Route::get('/infografia_interfaces', function () {
 });
 //Route::resource('gastos', 'Cxp\GastosController' );
 //Controladores de Usuarios
-Route::resource('/usuarios','usr\usersController');
-Route::resource('avatar', 'usr\avatarController' );
-Route::resource('datosadicionales', 'usr\datosAdicionalesController' );
-Route::resource('bajas', 'usr\bajasController' );
-Route::resource('contacto', 'usr\contactoController' );
-Route::resource('newsletter', 'usr\newsLetterController' );
+Route::resource('usuarios','Usuarios\UsuariosController');
+Route::resource('avatar', 'Usuarios\AvatarController' );
+Route::resource('datosadicionales', 'Usuarios\DatosAdicionalesController' );
+Route::resource('bajas', 'Usuarios\BajasController' );
+Route::resource('contacto', 'Usuarios\ContactoController' );
+Route::resource('newsletter', 'Usuarios\NewsLetterController' );
 
 //Controladores de Ventas
-Route::resource('pedidos', 'ventas\pedidosController' );
-Route::resource('articulos', 'ventas\articulosController' );
-Route::resource('servicios', 'ventas\serviciosController' );
-Route::resource('serviciosadicionales', 'ventas\serviciosAdicionalesController' );
-Route::resource('promociones', 'ventas\promocionesController' );
+Route::resource('articulos', 'Ventas\ArticulosController' );
+Route::resource('pedidos', 'Ventas\PedidosController' );
+Route::resource('promociones', 'Ventas\PromocionesController' );
+Route::resource('proveedores', 'Ventas\ProveedoresController' );
+Route::resource('servicios', 'Ventas\ServiciosController' );
+Route::resource('serviciosadicionales', 'Ventas\ServiciosAdicionalesController' );
+
 
 //Controladores de Administracion
-Route::resource('compras', 'administracion\comprasController' );
-Route::resource('proveedores', 'administracion\proveedoresController' );
-Route::resource('articuloscomprados', 'administracion\articulosComprasController' );
+Route::resource('compras', 'Administracion\ComprasController' );
 
 //Controladores Auxiliares
-Route::resource('articulospedidos', 'controladoresAuxiliares\articulosPedidosController' );
-Route::resource('serviciospedidos', 'controladoresAuxiliares\serviciosPedidosController' );
+Route::resource('articuloscompras', 'Auxiliares\articulosComprasController' );
+Route::resource('articulospedidos', 'Auxiliares\articulosPedidosController' );
+Route::resource('serviciospedidos', 'Auxiliares\serviciosPedidosController' );
 Route::resource('serviciosadicionalespedidos', 
-'controladoresAuxiliares\serviciosAdicionalesPedidosController' );
-Route::resource('promocionespedidos', 'controladoresAuxiliares\promocionesPedidosController' );
+'Auxiliares\serviciosAdicionalesPedidosController' );
+Route::resource('promocionespedidos', 'Auxiliares\promocionesPedidosController' );
 
 /*
 Usuarios:

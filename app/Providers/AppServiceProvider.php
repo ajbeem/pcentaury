@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Providers;
+namespace ProximaCentaury\Providers;
 
 use Illuminate\Support\ServiceProvider;
 

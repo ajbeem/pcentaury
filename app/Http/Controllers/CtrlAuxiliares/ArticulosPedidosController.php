@@ -1,10 +1,10 @@
 <?php
-namespace ProximaCentaury\Http\Controllers\Auxiliares;
+namespace ProximaCentaury\Http\Controllers\CtrlAuxiliares;
 use ProximaCentaury\Http\Controllers\Controller;
-use ProximaCentaury\Modelos\Auxiliares\serviciosPedidos;
+use ProximaCentaury\Modelos\Auxiliares\articulosPedidos;
 use Illuminate\Http\Request;
 
-class ServiciosPedidosController extends Controller
+class ArticulosPedidosController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +14,7 @@ class ServiciosPedidosController extends Controller
     public function index()
     {
         //
-        return "Hola desde ServiciosPedidosController";
+        return "Hola desde ArticulosPedidosController";
     }
 
     /**
@@ -41,10 +41,10 @@ class ServiciosPedidosController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \ProximaCentaury\serviciosPedidos  $serviciosPedidos
+     * @param  \ProximaCentaury\articulosPedidos  $articulosPedidos
      * @return \Illuminate\Http\Response
      */
-    public function show(serviciosPedidos $serviciosPedidos)
+    public function show(articulosPedidos $articulosPedidos)
     {
         //
     }
@@ -52,10 +52,10 @@ class ServiciosPedidosController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \ProximaCentaury\serviciosPedidos  $serviciosPedidos
+     * @param  \ProximaCentaury\articulosPedidos  $articulosPedidos
      * @return \Illuminate\Http\Response
      */
-    public function edit(serviciosPedidos $serviciosPedidos)
+    public function edit(articulosPedidos $articulosPedidos)
     {
         //
     }
@@ -64,10 +64,10 @@ class ServiciosPedidosController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \ProximaCentaury\serviciosPedidos  $serviciosPedidos
+     * @param  \ProximaCentaury\articulosPedidos  $articulosPedidos
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, serviciosPedidos $serviciosPedidos)
+    public function update(Request $request, articulosPedidos $articulosPedidos)
     {
         //
     }
@@ -75,10 +75,10 @@ class ServiciosPedidosController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \ProximaCentaury\serviciosPedidos  $serviciosPedidos
+     * @param  \ProximaCentaury\articulosPedidos  $articulosPedidos
      * @return \Illuminate\Http\Response
      */
-    public function destroy(serviciosPedidos $serviciosPedidos)
+    public function destroy(articulosPedidos $articulosPedidos)
     {
         //
     }

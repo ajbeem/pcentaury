@@ -48,12 +48,12 @@ Route::resource('serviciosadicionales', 'Ventas\ServiciosAdicionalesController' 
 Route::resource('compras', 'Administracion\ComprasController' );
 
 //Controladores Auxiliares
-Route::resource('articuloscompras', 'Auxiliares\articulosComprasController' );
-Route::resource('articulospedidos', 'Auxiliares\articulosPedidosController' );
-Route::resource('serviciospedidos', 'Auxiliares\serviciosPedidosController' );
+Route::resource('articuloscompras', 'CtrlAuxiliares\ArticulosComprasController' );
+Route::resource('articulospedidos', 'CtrlAuxiliares\ArticulosPedidosController' );
+Route::resource('serviciospedidos', 'CtrlAuxiliares\ServiciosPedidosController' );
 Route::resource('serviciosadicionalespedidos', 
-'Auxiliares\serviciosAdicionalesPedidosController' );
-Route::resource('promocionespedidos', 'Auxiliares\promocionesPedidosController' );
+'CtrlAuxiliares\ServiciosAdicionalesPedidosController' );
+Route::resource('promocionespedidos', 'CtrlAuxiliares\PromocionesPedidosController' );
 
 /*
 Usuarios:

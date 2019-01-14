@@ -1,5 +1,5 @@
 <?php
-namespace ProximaCentaury\Http\Controllers\Auxiliares;
+namespace ProximaCentaury\Http\Controllers\CtrlAuxiliares;
 use ProximaCentaury\Http\Controllers\Controller;
 use ProximaCentaury\Modelos\Auxiliares\promocionesPedidos;
 use Illuminate\Http\Request;

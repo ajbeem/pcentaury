@@ -40,8 +40,7 @@ margin: 0%;
 }
 
 </style>
-
-	<video src="videos/divining.mp4" loop autoplay muted id="videobg">
+	<video src="https://www.pcentaury.com/videos/divining.mp4" loop autoplay muted id="videobg">
 	</video>
 	
 	

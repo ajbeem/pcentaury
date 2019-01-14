@@ -54,6 +54,21 @@ Route::resource('serviciospedidos', 'CtrlAuxiliares\ServiciosPedidosController' 
 Route::resource('serviciosadicionalespedidos', 
 'CtrlAuxiliares\ServiciosAdicionalesPedidosController' );
 Route::resource('promocionespedidos', 'CtrlAuxiliares\PromocionesPedidosController' );
+Route::resource('archivos', 'CtrlAuxiliares\archivosController' );
+
+//Archivos
+Route::get('storage/{archivo}', function ($archivo) {
+    $public_path = public_path();
+    $url = $public_path.'/videos/'.$archivo;
+    //verificamos si el archivo existe y lo retornamos
+    if (Storage::exists($archivo))
+    {
+      return response()->download($url);
+    }
+    //si no se encuentra lanzamos un error 404.
+    abort(404);
+
+});
 
 /*
 Usuarios:

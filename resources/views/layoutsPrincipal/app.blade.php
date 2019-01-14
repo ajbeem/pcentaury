@@ -7,6 +7,7 @@
 <meta name="keywords"
 	content="Responsive web Design Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
 Smartphone Compatible web template, webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>Pr&oacute;xima Centaury</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -17,6 +18,13 @@ Smartphone Compatible web template, webdesigns for Nokia, Samsung, LG, SonyErics
 <link href="css/style-index.css" rel="stylesheet"> 
     <script src="js/JQUERY/jquery-dev-3.1.1.js"></script>
     <script src="js/BOOTSTRAP/bootstrap.min.js"></script>
+    <script>
+    $.ajaxSetup({
+    headers: {
+        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+    }
+});
+    </script>
 </head>
 <body style="background-color: #002248;">
     

@@ -1,58 +1,76 @@
 <?php
 ?>
-<style>
-#miBarraNav{
-background-color: #002248;
-}
-</style>
-  <nav class="navbar navbar-inverse navbar-fixed-top" id="miBarraNav">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">Servicios e infraestructura Inform&aacute;tica</a>
-      
-	<h6 style="color: #fff">
-			<a href="#"><span class="glyphicon glyphicon-user"></span> Software</a>
-			| <a href="#"> <span class="glyphicon glyphicon-shopping-cart"></span>
-				Hardware
+<link rel="stylesheet"
+	href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel='stylesheet'
+	href='https://use.fontawesome.com/releases/v5.6.3/css/all.css'
+	integrity='sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/'
+	crossorigin='anonymous'>
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- navBar dropdown hoverable-->
+<div class="w3-bar"
+	style="background: #002248; font-family: Arial, Helvetica, sans-serif; color: antiquewhite;">
+	<div class="w3-bar-item w3-button w3-mobile">
+		<a href="#"><h4>Servicios e Infraestructura Inform&aacute;tica</h4> </a>
+	</div>
+
+	<div class="w3-dropdown-hover w3-mobile">
+		<button class="w3-button">
+			Mistica <i class="fa fa-caret-down"></i>
+		</button>
+		<div class="w3-dropdown-content w3-bar-block w3-blue">
+			<a href="#" class="w3-bar-item w3-button w3-mobile">Misi&oacute;n</a>
+			<a href="#" class="w3-bar-item w3-button w3-mobile">Visi&oacute;n</a>
+			<a href="#" class="w3-bar-item w3-button w3-mobile">Valores</a> <a
+				href="#" class="w3-bar-item w3-button w3-mobile">WebMaster</a>
+		</div>
+	</div>
+
+	<div class="w3-dropdown-hover w3-mobile">
+		<button class="w3-button">
+			Normatividad <i class="fa fa-caret-down"></i>
+		</button>
+		<div class="w3-dropdown-content w3-bar-block w3-blue">
+			<a href="#" class="w3-bar-item w3-button w3-mobile">Aviso de
+				privacidad</a> <a href="#" class="w3-bar-item w3-button w3-mobile">T&eacute;rminos
+				y Condiciones</a> <a href="#"
+				class="w3-bar-item w3-button w3-mobile">Normas y Est&aacute;ndares</a>
+		</div>
+	</div>
+
+	<div class="w3-dropdown-hover w3-mobile">
+		<button class="w3-button">
+			Contacto <i class="fa fa-caret-down"></i>
+		</button>
+		<div class="w3-dropdown-content w3-bar-block w3-blue">
+			<a href="https://www.facebook.com/Alfredbeem"
+				class="w3-bar-item w3-button w3-mobile"> <i
+				class="fa fa-facebook-square" style="font-size: 20px"></i> &nbsp;
+				Facebook
+			</a> <a
+				href="https://plus.google.com/u/0/communities/103299867207875326585"
+				class="w3-bar-item w3-button w3-mobile"> <i
+				class="fa fa-google-plus-square" style="font-size: 20px"></i>&nbsp;
+				Google Plus
+			</a> <a href="https://twitter.com/al12506003"
+				class="w3-bar-item w3-button w3-mobile"> <i
+				class="fa fa-twitter-square" style="font-size: 20px"></i>&nbsp;
+				Twitter
 			</a>
-	</h6>
-    </div>
-    <ul class="nav navbar-nav">
-      <li><a href="#"><span class="glyphicon glyphicon-home">&nbsp;Inicio</span></a></li>
-      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
-        <ul class="dropdown-menu">
-          <li><a href="#">Page 1-1</a></li>
-          <li><a href="#">Page 1-2</a></li>
-          <li><a href="#">Page 1-3</a></li>
-        </ul>
-      </li>
-      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
-        <ul class="dropdown-menu">
-          <li><a href="#">Page 2-1</a></li>
-          <li><a href="#">Page 2-2</a></li>
-          <li><a href="#">Page 2-3</a></li>
-        </ul>
-      </li>
-      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
-        <ul class="dropdown-menu">
-          <li><a href="#">Page 3-1</a></li>
-          <li><a href="#">Page 3-2</a></li>
-          <li><a href="#">Page 3-3</a></li>
-        </ul>
-      </li>
-    </ul>
+		</div>
+	</div>
+	<div style="padding-top: 10px;">
+		<input type="text" class="w3-bar-item w3-input" placeholder="Search..">
+		<a href="#" class="w3-bar-item w3-button w3-blue">Go</a>
+	</div>
+	<div style="padding-top: 0px;">
+		<a href="#" class="w3-bar-item w3-button w3-mobile"><i
+			class="fa fa-vcard-o" style="font-size: 20px"></i> &nbsp; Registate
+			con Nosotros</a> <a href="#" class="w3-bar-item w3-button w3-mobile"><i
+			class="fa fa-user-circle-o" style="font-size: 20px"></i> &nbsp;
+			Acceso</a>
+	</div>
 
-    <ul class="nav navbar-nav navbar-right">
-      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-    </ul>
-
-    <form class="navbar-form navbar-left" action="/action_page.php">
-      <div class="form-group">
-        <input type="text" class="form-control" placeholder="Search">
-      </div>
-      <button type="submit" class="btn btn-default">Submit</button>
-    </form>
-    
-  </div>
-</nav>
+</div>

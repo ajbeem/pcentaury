@@ -10,35 +10,53 @@ Smartphone Compatible web template, webdesigns for Nokia, Samsung, LG, SonyErics
 <meta name="csrf-token" content="{{ csrf_token() }}">
 
 <title>Pr&oacute;xima Centaury</title>
-<!-- Latest compiled and minified CSS -->
+<!-- Latest compiled and minified CSS>
 <link rel="stylesheet"
-	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"-->
 
-<!-- jQuery library -->
+<!--Dev CSS Bootstrap Mode-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.css">
+
+<!-- jQuery library Prod -->
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- jQuery library Dev Mode -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
 
 <!-- Latest compiled JavaScript -->
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<!-- Popper library Prod--> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+
+<!-- W3 library Prod -->
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
 
 
 <!-- font-awesome-icons -->
 <link rel="stylesheet" href="https://www.pcentaury.com/recursos/css/icons.css" type="text/css" media="all" />
 <link href="https://www.pcentaury.com/recursos/css/style-index.css" rel="stylesheet">
 <script>
+        window.Laravel = <?php
+        echo json_encode([
+            'csrfToken' => csrf_token()
+        ]);
+        ?>
+    </script>
+
+<script>
     $.ajaxSetup({
     headers: {
         'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
     }
-});
-    </script>
+});    </script>
 </head>
 <body style="background-color: #002248;">
 	<header>
-		<!-- Nav Bar    @include('layoutsPrincipal.navBar')-->
-		@include('layoutsAuxiliaresPrincipal.navbarDisplayMenu')
+		@include('layoutsAuxiliaresPrincipal.navbarColapse')
 	</header>
 	@csrf
 	<!-- Aside -->
@@ -57,6 +75,7 @@ Smartphone Compatible web template, webdesigns for Nokia, Samsung, LG, SonyErics
 	@include('layoutsPrincipal.footer')
 	<!--Dev Vue Mode>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.2.0/vue.js"></script-->
+
 	<script src = "https://cdn.jsdelivr.net/npm/vue@2.5.21/dist/vue.js"></script>
 	<!--Prod Vue Mode>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.2.0/vue.min.js"></script-->

@@ -23,6 +23,14 @@ Route::get('/vue', function () {
     return view('componenteVue');
 });
 
+Route::get('/navBar', function () {
+    return view('layoutsAuxiliaresPrincipal.navBar');
+});
+
+Route::get('/navBarMenu', function () {
+    return view('layoutsAuxiliaresPrincipal.navBarDisplayMenu');
+});
+
 Route::get('/infografia_interfaces', function () {
     return view('/viewsPruebas/infografia_interfaces');
 });

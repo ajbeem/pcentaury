@@ -2,6 +2,7 @@
 ?>
 <style>
 #piePagina {
+    position:static;
 	left: 0;
 	bottom: 0;
 	width: 100%;
@@ -27,7 +28,7 @@
 			<p>Nuestra razón de existir es proporcionar las mejores opciones
 				para el crecimiento exponencial que su empresa necesita</p>
 			<!-- p>
-				<!-- ul class="list-group list-unstyled">
+				<ul class="list-group list-unstyled">
 				<li class="list-group-item"><a href="#" class="fa fa-facebook"> <span ></span> </a></li>
 				<li list-group-item>2</li>
 				<li list-group-item>3</li>
@@ -48,9 +49,9 @@
 			</ul>
 			</p-->
 			<div class="btn-group">
-				<button type="button" class="btn btn-primary"> <a href="https://www.facebook.com/Alfredbeem"><img alt="face" src="images/facebook.png" width="20vw" height="25vh"></a> </button>
-				<button type="button" class="btn btn-primary"><a href="https://twitter.com/al12506003"><img alt="twitterfred" src="images/twitter.png" width="20vw" height="25vh"></a></button>
-				<button type="button" class="btn btn-primary"><a href="https://plus.google.com/u/0/communities/103299867207875326585"><img alt="gplusfred" src="images/googleplus.png"width="20vw" height="25vh"></a></button>
+				<button type="button" class="btn btn-primary"> <a href="https://www.facebook.com/Alfredbeem"><img alt="face" src="https://www.pcentaury.com/recursos/images/facebook.png" width="20vw" height="25vh"></a> </button>
+				<button type="button" class="btn btn-primary"><a href="https://twitter.com/al12506003"><img alt="twitterfred" src="https://www.pcentaury.com/recursos/images/twitter.png" width="20vw" height="25vh"></a></button>
+				<button type="button" class="btn btn-primary"><a href="https://plus.google.com/u/0/communities/103299867207875326585"><img alt="gplusfred" src="https://www.pcentaury.com/recursos/images/googleplus.png"width="20vw" height="25vh"></a></button>
 			</div>
 
 		</div>

@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#barraNav{
+    font-family: Arial, Helvetica, sans-serif;
+    color: antiquewhite;
+}
+a:link {
+  color: rgb(247, 244, 244);
+}
+
+/* visited link */
+a:visited {
+  color: rgb(187, 194, 187);
+}
+
+/* mouse over link */
+a:hover {
+  color: rgb(105, 245, 255);
+}
+
+/* selected link */
+a:active {
+  color: rgb(183, 183, 240);
+}
+header{
+    width: 100%;
+    height: 50px;
+    background: #002248;
+}
+#btnMenu{
+    display: none;
+}
+
+header label{
+    display: none;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    border-right: #ffffff;
+    cursor: pointer;
+    /* background: rgba(0, 0, 0, 3); */
+}
+
+.mimenu ul{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    /* justify-content: flex-end; border-right: #ffffff;*/
+    
+}
+.mimenu ul ul{
+    display: none;
+}
+
+.mimenu li{
+    border-right: 1px solid #ffffff;
+}
+.mimenu li:hover{
+    background: rgba(0, 0, 0, 0.3)
+}
+.mimenu li a{
+    display: block;
+    padding: 15px 20px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.mimenu a:hover{
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.mimenu a span{
+    margin-left: 10px;
+}
+
+.mimenu ul li:hover ul{
+    display: block;
+    position: absolute;
+    background: #366499;
+}
+
+@media(max-width:768px){
+    header label{
+        display: block;
+    }
+    .mimenu{
+        position: absolute;
+        top:50px;
+        left: 0;
+        background: #002248;
+        width: 50%;
+        /* margin-left: -50%; */
+        transform: translateX(-100%);
+        transition: all 0.3s;
+    }
+    .mimenu ul{
+        display: block;
+        background: #002248;
+    }
+    
+    .mimenu li{
+        border-top: 1px solid #fff;
+    }
+    .mimenu ul li:hover ul{
+        display: none;
+        position: static;
+    }
+    .mimenu a span{
+        position: absolute;
+        right: 5px;
+    }
+
+    #btnMenu:checked ~ .mimenu{
+        transform: translateX(0%);
+    }
+}

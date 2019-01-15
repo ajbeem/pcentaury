@@ -16,10 +16,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
 		function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- //custom-theme -->
-<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-<link href="css/easy-responsive-tabs.css" rel='stylesheet' type='text/css'/>
-<link href="css/galleryeffect.css" rel="stylesheet" type="text/css" media="all" />
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href="https://www.pcentaury.com/recursos/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="https://www.pcentaury.com/recursos/css/easy-responsive-tabs.css" rel='stylesheet' type='text/css'/>
+<link href="https://www.pcentaury.com/recursos/css/galleryeffect.css" rel="stylesheet" type="text/css" media="all" />
+<link href="https://www.pcentaury.com/recursos/css/style.css" rel="stylesheet" type="text/css" media="all" />
 <!-- font-awesome-icons -->
 <link href="css/font-awesome.css" rel="stylesheet"> 
 <!-- //font-awesome-icons -->
@@ -29,7 +29,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <body>
 <!-- banner -->
 <div class="banner_top" id="home">
-	<div data-vide-bg ="video/divining">
+	<div data-vide-bg ="https://www.pcentaury.com/recursos/video/divining">
 		<div class="center-container">
 			<div class="w3_agile_header">
 						<div class="w3_agileits_logo">

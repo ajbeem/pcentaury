@@ -1,0 +1,88 @@
+#barraNav{
+    font-family: Arial, Helvetica, sans-serif;
+    color: antiquewhite;
+}
+a:link {
+  color: rgb(247, 244, 244);
+}
+
+/* visited link */
+a:visited {
+  color: rgb(187, 194, 187);
+}
+
+/* mouse over link */
+a:hover {
+  color: rgb(105, 245, 255);
+}
+
+/* selected link */
+a:active {
+  color: rgb(183, 183, 240);
+}
+header{
+    width: 100%;
+    background: #002248;
+}
+#btnMenu{
+    display: none;
+}
+
+header label{
+    display: none;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    border-right: #ffffff;
+}
+
+header label:hover{
+    cursor: pointer;
+    /* background: rgba(0, 0, 0, 3); */
+}
+
+.mimenu ul{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    /* justify-content: flex-end; border-right: #ffffff;*/
+    
+}
+.mimenu li{
+    border-right: 1px solid #ffffff;
+}
+.mimenu li:hover{
+    background: rgba(0, 0, 0, 0.3)
+}
+.mimenu li a{
+    display: block;
+    padding: 15px 20px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+@media(max-width:768px){
+    header label{
+        display: block;
+    }
+    .mimenu{
+        position: absolute;
+        background: #002248;
+        width: 50%;
+        margin-left: -50%;
+        transition: all 0.3s;
+    }
+    .mimenu ul{
+        flex-direction: column;
+    }
+
+    .mimenu li{
+        border-top: 1px solid #fff;
+    }
+
+    #btnMenu:checked ~ .mimenu{
+        margin: 0;
+
+    }
+}

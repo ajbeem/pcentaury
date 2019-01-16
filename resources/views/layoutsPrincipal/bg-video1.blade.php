@@ -4,6 +4,7 @@
 * {
   box-sizing: border-box;
 }
+
 #videobg {  
 right: 0;
   bottom: 0;
@@ -39,12 +40,45 @@ margin: 0%;
   color: black;
 }
 
+video {
+  width: 100%;
+  height: auto;
+}
+
+.mediaContenedor{
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  position:relative;
+}
+
+.mediaContenedor iframe,
+.mediaContenedor object,
+.mediaContenedor video{
+  width: 100%;
+  height: 100%;
+  left:0;
+  top:0;
+  position:absolute;
+}
+
 </style>
 	<!--video src="https://www.pcentaury.com/recursos/videos/divining.mp4" loop autoplay muted id="videobg">
   </video>
   <video src="https://www.pcentaury.com/recursos/videos/get_set.mp4" loop autoplay muted id="videobg">
-	</video-->
-	
-	<video src="https://www.pcentaury.com/recursos/videos/pt2.mp4" loop autoplay muted id="videobg">
+	</video>
+<div class="mediaContenedor">
+  <video muted loop autoplay  id="videobg" poster="https://www.pcentaury.com/recursos/images/logoPC.png">
+   <source src="https://www.pcentaury.com/recursos/videos/pt2.mp4"  type="video/mp4">
+  Your browser does not support the video tag.
   </video>
+</div--> 
+	
+	<div class="mediaContenedor">
+  <video muted loop autoplay  id="videobg" poster="https://www.pcentaury.com/recursos/images/logoPC.png">
+   <source src="https://www.pcentaury.com/recursos/videos/divining.mp4"  type="video/mp4">
+  Your browser does not support the video tag.
+  </video>
+</div> 
 <!-- //banner -->

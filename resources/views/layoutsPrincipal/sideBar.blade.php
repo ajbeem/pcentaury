@@ -1,20 +1,20 @@
 <?php
 ?>
 <div class="mobile-nav-button">
-									<div class="mobile-nav-button__line"></div>
-									<div class="mobile-nav-button__line"></div>
-									<div class="mobile-nav-button__line"></div>
-								</div>
-								<nav class="mobile-menu">
-									<ul>
-										<li><a href="#home" class="active scroll" >Desarrollo Web</a></li>
-										<li><a href="#about" class="scroll" >Software a la Medida</a></li>
-										<li><a href="#team" class="scroll" >Aplicaciones M&oacute;viles</a></li>
-										<li><a href="#services" class="scroll" >VideoJuegos</a></li>
-										<li><a href="#gallery" class="scroll" >Hardware</a></li>
-										<li><a href="#contact" class="scroll" >Innovaci&oacute;n y Desarrollo</a></li>
-									</ul>
-								</nav>
+	<div class="mobile-nav-button__line"></div>
+	<div class="mobile-nav-button__line"></div>
+	<div class="mobile-nav-button__line"></div>
+</div>
+<nav class="mobile-menu">
+	<ul>
+		<li><a href="#home" class="active scroll">Desarrollo Web</a></li>
+		<li><a href="#about" class="scroll">Software a la Medida</a></li>
+		<li><a href="#team" class="scroll">Aplicaciones M&oacute;viles</a></li>
+		<li><a href="#services" class="scroll">VideoJuegos</a></li>
+		<li><a href="#gallery" class="scroll">Hardware</a></li>
+		<li><a href="#contact" class="scroll">Innovaci&oacute;n y Desarrollo</a></li>
+	</ul>
+</nav>
 <script>
 	$(document).ready(function () {
 	  $('.mobile-nav-button').on('click', function() {

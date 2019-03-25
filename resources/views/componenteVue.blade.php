@@ -53,7 +53,7 @@
           </div>
     </div>
     <!-- 
-<!--?php
+?php
 echo phpinfo();
 ?>
     -->

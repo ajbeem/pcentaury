@@ -9,7 +9,7 @@
 Smartphone Compatible web template, webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
 <meta name="csrf-token" content="{{ csrf_token() }}">
 
-<title>Pr&oacute;xima Centaury</title>
+<title>Pr&oacute;xima Centaury @yield('title')</title>
 <!-- Latest compiled and minified CSS>
 <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"-->
@@ -61,12 +61,27 @@ Smartphone Compatible web template, webdesigns for Nokia, Samsung, LG, SonyErics
 });    </script>
 </head>
 <body style="background-color: #002248;">
-	<header> @include('layoutsPrincipal.navBar') </header>
+	<header> 
+	@section('sidebar')
+		@include('layoutsPrincipal.navBar') 
+    @show
+	</header>
 	@csrf
-	<!-- Aside -->
-	@include('layoutsPrincipal.sideBar')
+	<!--Left Aside @include('layoutsPrincipal.sideBarOverlay')-->
+	
+	<!-- Rigth Aside -->
+	@section('rightSidebar')
+		@include('layoutsPrincipal.sideBar')
+    @show
+	
+	
 	<!-- video banner -->
-	@include('layoutsPrincipal.bg-video1')
+	@section ('content1')
+		@include('layoutsPrincipal.bg-video1')
+	@show
+
+	
+	
 
 	<div class="container">
 		<div class="row"></div>
@@ -78,6 +93,7 @@ Smartphone Compatible web template, webdesigns for Nokia, Samsung, LG, SonyErics
 	<!--Footer-->
 	<footer> @include('layoutsPrincipal.footer') </footer>
 
+	@section('scriptsAdicionales') @show
 	<!--Dev Vue Mode>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.2.0/vue.js"></script-->
 
@@ -89,5 +105,6 @@ Smartphone Compatible web template, webdesigns for Nokia, Samsung, LG, SonyErics
 		src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
 	<!--Prod Mode>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script-->
+	
 </body>
 </html>

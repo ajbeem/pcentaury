@@ -12,11 +12,11 @@
 */
 
 Route::get('/', function () {
-    return view('layoutsPrincipal.app');
+    return view('layoutsPrincipal.index');
 });
 
-Route::get('/index', function () {
-    return view('layoutsPrincipal.index');
+Route::get('/bodyPrincipal', function () {
+    return view('layoutsPrincipal.cuerpoPrincipal');
 });
 
 Route::get('/vue', function () {
@@ -102,3 +102,6 @@ serviciosAdicionalesPedidosController
 promocionesPedidosController
 
 */
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

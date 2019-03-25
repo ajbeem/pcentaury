@@ -34,8 +34,11 @@
 		</button>
 		<div class="w3-dropdown-content w3-bar-block w3-blue">
 			<a href="#" class="w3-bar-item w3-button w3-mobile">Aviso de
-				privacidad</a> <a href="#" class="w3-bar-item w3-button w3-mobile">T&eacute;rminos
-				y Condiciones</a> <a href="#"
+				privacidad</a> 
+			
+			<a href="#" class="w3-bar-item w3-button w3-mobile">T&eacute;rminos
+				y Condiciones</a> 
+			<a href="#"
 				class="w3-bar-item w3-button w3-mobile">Normas y Est&aacute;ndares</a>
 		</div>
 	</div>
@@ -65,12 +68,18 @@
 		<input type="text" class="w3-bar-item w3-input" placeholder="Search..">
 		<a href="#" class="w3-bar-item w3-button w3-blue">Go</a>
 	</div>
-	<div style="padding-top: 0px;">
-		<a href="#" class="w3-bar-item w3-button w3-mobile"><i
-			class="fa fa-vcard-o" style="font-size: 20px"></i> &nbsp; Registate
-			con Nosotros</a> <a href="#" class="w3-bar-item w3-button w3-mobile"><i
-			class="fa fa-user-circle-o" style="font-size: 20px"></i> &nbsp;
-			Acceso</a>
+
+	<div style="padding-top: 10px;">
+		<a href="{{url('/vue')}}" class="w3-bar-item w3-button w3-mobile w3-hover-blue">
+		<i class="fa fa-steam" style="font-size: 20px; color:blue"></i>&nbsp; Proyecto Vue
+		</a> 
+		
+		<a href="#" class="w3-bar-item w3-button w3-mobile w3-hover-blue"
+			onclick="document.getElementById('modalAudio').style.display='block'">
+			Blog Colaborativo<i class="fas fa-atlas"
+			style="font-size: 24px; color: green"></i>
+		</a>
+
 	</div>
 
 </div>
